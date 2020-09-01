@@ -47,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text("Add Item"),
+          title: id.isEmpty ? Text("Add Item") : Text("Update item"),
           content: Form(
             key: formKey,
             autovalidate: true,
